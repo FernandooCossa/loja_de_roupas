@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de Produtos</title>
+</head>
+<body>
+  
+  <H1>Cadastro de Produtos</H1>
+
+<form>
+	<p>
+		<label for="l_cadastro">Código</label>
+		  <input type="number" name="cadastro" id="cadastro">		
+	</p>
+
+	<p>
+		<label for="l_nome">Nome:</label>
+		  <input type="text" name="nome" id="nome">
+	</p>
+
+	<p>
+		<label for="l_preco">Preço de Venda:</label>
+		  <input type="text" name="Preco" id="preco">
+	</p>
+
+	<p>
+		<label for="l_categorias">Categorias:</label>
+			<select name="categorias" id="categorias">
+			    <option value="camisas">Camisas</option>
+				<option value="sapatos">Sapatos</option>
+				<option value="calca">Calças</option>
+				<option value="bones">Bonés</option>
+			</select>
+	</p>
+
+	<p>
+		<label for="l_ativos">Ativo:</label>
+
+		  <input type="radio" name="ativo" id="ativo" value="S" required>
+		<label for="l_sim">Sim</label>
+
+		  <input type="radio" name="ativo" id="ativo" value="N">
+		<label for="l_nao">Não</label>
+	</p>
+
+	<p>
+		<label for="l_tamanhos">Tamanhos</label>
+
+		  <input type="checkbox" name="P" id="P" value="P">
+			 
+		<label for="l_p">P</label>
+
+		  <input type="checkbox" name="m" id="m" value="m">
+			
+		<label for="l_m">M</label>
+
+	      <input type="checkbox" name="g" id="g" value="g">
+			 
+		<label for="l_g">G</label>
+
+		  <input type="checkbox" name="gg" id="gg" value="gg">
+	
+		<label for="l_gg">GG</label>
+	</p>
+
+          <input type="button" name="gravar" id="gravar" value="Gravar" onclick="window.location='listaProdutos.html'">
+          <input type="button" name="voltar" id="voltar" value="Voltar" onclick="window.location='listaProdutos.html'">
+</form>
+
+</body>
+</html>
