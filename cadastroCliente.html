@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cadastro de Produtos</title>
+	<title>Cadastro de Clientes</title>
   <script src="cssatividade/javascript_lista.js"></script>
 
 	<style type="text/css">
@@ -74,67 +74,42 @@
 </head>
 <body>
   
-  <H1>Cadastro de Produtos</H1>
+  <H1>Cadastro de Clientes</H1>
 
 <form>
 	<p>
 		<label for="l_codigo">Código</label>
-		  <input type="number" name="codigo" id="codigo">		
+		  <input type="number" name="codigoC" id="codigoC">		
 	</p>
 
 	<p>
 		<label for="l_nome">Nome:</label>
-		  <input type="text" name="nome" id="nome">
+		  <input type="text" name="nomeC" id="nomeC">
 	</p>
 
 	<p>
-		<label for="l_preco">Preço de Venda:</label>
-		  <input type="text" name="preco" id="preco">s
+		<label for="l_preco">CPF:</label>
+		  <input type="text" name="cpf" id="cpf">s
 	</p>
 
 	<p>
-		<label for="l_categorias" >Categorias:</label>
-			<select name="categorias" id="categorias">
-			    <option value="camisas">Camisas</option>
-				<option value="sapatos">Sapatos</option>
-				<option value="calça">Calças</option>
-				<option value="bones">Bonés</option>
-			</select>
+		<label for="l_dataNascimento">Data de Nascimento</label>
+           <input type="date" name="dataNascimento" id="dataNascimento">
+	</p>
+
+  <p>
+		<label for="l_Telefone">Telefone</label>
+          <input type="text" name="telefone" id="telefone">
 	</p>
 
 	<p>
-		<label for="l_ativos">Ativo:</label>
-
-		  <input type="radio" name="ativo" id="s" value="S" required>
-		<label for="l_sim">Sim</label>
-
-		  <input type="radio" name="ativo" id="n" value="N">
-		<label for="l_nao">Não</label>
-	</p>
-
-	<p>
-		<label for="l_tamanhos">Tamanhos</label>
-
-		  <input type="checkbox" name="P" id="P" value="P">
-			 
-		<label for="l_p">P</label>
-
-		  <input type="checkbox" name="m" id="m" value="m">
-			
-		<label for="l_m">M</label>
-
-	      <input type="checkbox" name="g" id="g" value="g">
-			 
-		<label for="l_g">G</label>
-
-		  <input type="checkbox" name="gg" id="gg" value="gg">
-	
-		<label for="l_gg">GG</label>
+		<label for="l_email">Email</label>
+           <input type="email" name="email" id="email">
 	</p>
 
  
-  <input type="button" name="gravar" id="gravar" value="Gravar" onclick="cadastrarP()" onclick="window.location='listaProdutos'">
-  <input type="button" name="voltar" id="voltar" value="Voltar" onclick="window.location='listaProdutos.html'">
+  <input type="button" name="gravar" id="gravar" value="Gravar" onclick="cadastrarCliente()">
+  <input type="button" name="voltar" id="voltar" value="Voltar" onclick="window.location = 'listaClientes.html'">
 </form>
 
 </body>

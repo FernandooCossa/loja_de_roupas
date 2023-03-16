@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lista de Produtos</title>
+	<title>Lista de Clientes</title>
 	<style type="text/css">
 		body{
 			background: linear-gradient(1000deg,blue,#add8e6);
@@ -32,20 +32,20 @@
 	</style>
 	<script src="cssatividade/javascript_lista.js"></script>
 </head>
-<body onload="listar()">
+<body onload="listarCliente()">
 	
 
-  <h1>Lista de Produtos</h1>
+  <h1>Lista de Clientes</h1>
 
 <table border="1" width="70%">
 	<thead>
 	<tr>
 		<th>Código</th>
 		<th>Nome</th>
-		<th>Preço de Venda</th>
-		<th>Categoria</th>
-		<th>Ativo</th>
-		<th>Tamanhos Disponiveis</th>
+		<th>CPF</th>
+		<th>Data de Nascimento</th>
+		<th>Telefone</th>
+		<th>Email</th>
 
 	</tr>
    </thead>
@@ -57,16 +57,16 @@
 
 <br>
 
-<input type="button" name="Cadastrar" id="Cadastrar" value="Cadastrar Produto">
+<input type="button" name="Cadastrar" id="Cadastrar" value="Cadastrar Produto" onclick="window.location='cadastroCliente.html'">
 <input type="button" name="sair" id="sair" value="Logoff"  onclick="window.location='login.html'">
 
 <script id="colunas" type="text/x-jsrender">
         <td data-column="Codigo"></td>
         <td data-column="Nome"></td>
-		<td data-column="Preco_de_Venda"></td>
-		<td data-column="Categoria"></td>
-		<td data-column="Ativo"></td>
-		<td data-column="Tamanhos_Disponiveis"></td>
+		<td data-column="CPF"></td>
+		<td data-column="Data_de_Nascimento"></td>
+		<td data-column="Telefone"></td>
+		<td data-column="Email"></td>
     </script>
 
 </body>
